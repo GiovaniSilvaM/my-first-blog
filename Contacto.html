@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Servicios</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/estiloscontacto.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+
+            <div id="marca">
+
+                <h1>Constructora C&C</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li class="actual"><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Iniciar sesion</a></li>
+ 
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    
+    <section id="main">
+        <div class="contenedor">
+            <form action="hola" class="form" method="GET">
+                <div class="form-header">
+                    <h1 class="form-title">C<span>ontacto</span></h1>
+                </div>
+
+                <label for="nombre" class="form-label">Nombres:</label>
+                <input type="text" id="nombre" class="form-input" placeholder="Escriba sus nombres" required>
+
+                <label for="apellido" class="form-label">Apellidos:</label>
+                <input type="text" id="apellido" class="form-input" placeholder="Escriba sus apellidos" required>
+
+                <label for="direccion" class="form-label">Dirección:</label>
+                <input type="text" id="direccion" class="form-input" placeholder="Escriba su dirección" required>
+
+                <label for="telefono" class="form-label">Telefono:</label>
+                <input type="number" id="telefono" class="form-input" placeholder="Escriba su numero de telefono (999999999)" min="0"  required>
+
+                <label for="correo" class="form-label">Correo Electronico:</label>
+                <input type="email" id="correo" class="form-input" placeholder="Escriba su correo" required>
+                
+                <label for="mensaje" class="form-label"> Mensaje</label>
+                <textarea id="mensaje" class="form-textarea" placeholder="Escriba aquí su mensaje" required></textarea>
+
+                <input type="submit" class="btn-submit" value="Enviar Consulta">
+            </form>
+        </div>
+        
+       
+    </section>
+
+    <footer>
+        <h3>Horario de atención</h3>
+        <p>Lunes a viernes desde 9:00 am a 18:00 pm</p>
+        <p>Sabado  de 10:00 am a 17:00 pm</p>
+        <p>Consultas al +56964203989</p>
+    </footer>
+
+
+    
+</body>
+</html>
