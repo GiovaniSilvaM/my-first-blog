@@ -1,3 +1,4 @@
+{% extends 'blog/post_list.html' %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,19 +11,19 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/release/v5.6.3/css/all.css">
-    
+
     <link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/iniciosesion.css' %}">
     <link rel="stylesheet" href="{% static 'css/estilosportada.css' %}">
     <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/release/v5.6.3/css/all.css">
+    
     <script src="https://kit.fontawesome.com/1d1ac938fb.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 
 <body>
-
     <header>
         <div class="contenedor">
 
@@ -42,11 +43,15 @@
         </div>
     </header>
 
-
+    
     <form class="formulario">
 
-        <h1 class="hola">Inicia sesión</h1>
-        <div class="contenedorform2">
+        <h1 class="hola">Registrate</h1>
+        <div class="contenedorform">
+            <div class="input-contenedor">
+            <i class="fas fa-user icon"></i>
+            <input type="text" placeholder="Nombre completo">
+            </div>
 
             <div class="input-contenedor">
             <i class="fas fa-envelope icon"></i>
@@ -58,12 +63,12 @@
             <input type="password" placeholder="Contraseña">
             </div>
 
-            <input type="submit" value="Iniciar sesión" class="button"><a class="link" href="index.html"><a/>
+            <input type="submit" value="Registrate" class="button">
             <br>
             <br>
             <p>Al registrate aceptas nuestras condiciones de uso y politica de privacidad.<p>
             <br>
-            <p>¿No tienes una cuenta? <a class="link" href="{% url 'post_detail' %}">Registrate</a><p>
+            <p>¿Ya tienes una cuenta? <a class="link" href="{% url 'post_list' %}">Inicia sesión</a><p>
         </div>
         
     </form>
