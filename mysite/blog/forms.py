@@ -1,13 +1,14 @@
 from django import forms
+from .models import Post
+from .models import Usuario
 
-from blog.models import Post
 
 class UsuarioForm(forms.ModelForm):
 
     class Meta:
         model = Usuario
         fields = [
-            'nombre',
+            'nombre', 
             'correo',
             'contraseña',
         ]
@@ -16,3 +17,9 @@ class UsuarioForm(forms.ModelForm):
             'correo': 'Correo',
             'contraseña': 'Contraseña',
         }
+
+class PostForm(forms.ModelForm):
+
+    class Meta:
+        model = Post
+        fields = ('title', 'text',)
