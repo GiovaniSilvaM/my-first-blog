@@ -1,9 +1,18 @@
 from django import forms
 
-from .models import Post
+from blog.models import Post
 
-class PostForm(forms.ModelForm):
+class UsuarioForm(forms.ModelForm):
 
     class Meta:
-        model = Post
-        fields = ('title', 'text',)
+        model = Usuario
+        fields = [
+            'nombre',
+            'correo',
+            'contraseña',
+        ]
+        label = {
+            'nombre': 'Nombre',
+            'correo': 'Correo',
+            'contraseña': 'Contraseña',
+        }
